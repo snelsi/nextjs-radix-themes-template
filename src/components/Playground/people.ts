@@ -182,7 +182,7 @@ function getPeopleForColor(color: (typeof accentColors)[number]) {
 
 function avatar(
   id: string,
-  params?: { x?: number; y?: number; zoom?: number }
+  params?: { x?: number; y?: number; zoom?: number },
 ) {
   let crop = "";
   if (params === undefined) {

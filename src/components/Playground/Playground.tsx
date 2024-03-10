@@ -1598,7 +1598,7 @@ export const Playground = () => (
                             </ContextMenuRoot>
                           </Flex>
                         </td>
-                      )
+                      ),
                     )}
                   </tr>
                 ))}
@@ -1638,7 +1638,7 @@ export const Playground = () => (
                             </ContextMenuRoot>
                           </Flex>
                         </td>
-                      )
+                      ),
                     )}
                   </tr>
                 ))}
@@ -2069,7 +2069,7 @@ export const Playground = () => (
                             </DropdownMenuRoot>
                           </Flex>
                         </td>
-                      )
+                      ),
                     )}
                   </tr>
                 ))}
@@ -2117,7 +2117,7 @@ export const Playground = () => (
                             </DropdownMenuRoot>
                           </Flex>
                         </td>
-                      )
+                      ),
                     )}
                   </tr>
                 ))}
@@ -3306,7 +3306,7 @@ export const Playground = () => (
                         <SelectTrigger variant={variant} />
                         <SelectContent
                           variant={selectTriggerVariantToSelectContentVariant(
-                            variant
+                            variant,
                           )}
                         >
                           <ExampleSelectContent />
@@ -3318,7 +3318,7 @@ export const Playground = () => (
                         <SelectTrigger variant={variant} color="gray" />
                         <SelectContent
                           variant={selectTriggerVariantToSelectContentVariant(
-                            variant
+                            variant,
                           )}
                           color="gray"
                           highContrast
@@ -3335,7 +3335,7 @@ export const Playground = () => (
                         />
                         <SelectContent
                           variant={selectTriggerVariantToSelectContentVariant(
-                            variant
+                            variant,
                           )}
                         >
                           <ExampleSelectContent />
@@ -3347,7 +3347,7 @@ export const Playground = () => (
                         <SelectTrigger variant={variant} />
                         <SelectContent
                           variant={selectTriggerVariantToSelectContentVariant(
-                            variant
+                            variant,
                           )}
                         >
                           <ExampleSelectContent />
@@ -3382,7 +3382,7 @@ export const Playground = () => (
                           <SelectTrigger variant={variant} color={color} />
                           <SelectContent
                             variant={selectTriggerVariantToSelectContentVariant(
-                              variant
+                              variant,
                             )}
                             color={color}
                           >
@@ -3431,7 +3431,7 @@ export const Playground = () => (
                               />
                               <SelectContent
                                 variant={selectTriggerVariantToSelectContentVariant(
-                                  variant
+                                  variant,
                                 )}
                               >
                                 <ExampleSelectContent />
@@ -4894,7 +4894,7 @@ const aspectRatioImage = (
 );
 
 function buttonSizeToIconSize(
-  buttonSize: (typeof buttonPropDefs.size.values)[number]
+  buttonSize: (typeof buttonPropDefs.size.values)[number],
 ) {
   if (buttonSize === "1" || buttonSize === "2")
     return { width: 16, height: 16 };
@@ -4903,7 +4903,7 @@ function buttonSizeToIconSize(
 }
 
 function calloutSizeToIconSize(
-  calloutSize: (typeof calloutRootPropDefs.size.values)[number]
+  calloutSize: (typeof calloutRootPropDefs.size.values)[number],
 ) {
   if (calloutSize === "1" || calloutSize === "2")
     return { width: 16, height: 16 };
@@ -4928,7 +4928,7 @@ const InsetImage = (props: React.ComponentPropsWithoutRef<"img">) => (
 );
 
 function selectTriggerVariantToSelectContentVariant(
-  triggerVariant: (typeof selectTriggerPropDefs.variant.values)[number]
+  triggerVariant: (typeof selectTriggerPropDefs.variant.values)[number],
 ) {
   if (triggerVariant === "soft" || triggerVariant === "ghost") return "soft";
   return "solid";
