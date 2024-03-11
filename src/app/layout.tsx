@@ -4,7 +4,7 @@ import { Providers } from "./providers";
 import "@radix-ui/themes/styles.css";
 
 import "@/styles/reset.css";
-import "@/styles/global.css";
+import "@/styles/globals.css";
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => (
   <html lang="en" className={inter.className} suppressHydrationWarning>
